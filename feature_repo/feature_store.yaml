@@ -1,0 +1,6 @@
+project: credit_scoring_aws
+registry: data/registry.db
+provider: local
+online_store:
+    path: data/online_store.db
+

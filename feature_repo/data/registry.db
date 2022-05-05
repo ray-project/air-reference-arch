@@ -1,0 +1,45 @@
+
+†
+f
+dob_ssn<Date of birth and last four digits of social security number"dob_ssnJcredit_scoring_aws
+žï›“àÝûÎžï›“àÝûÎ
+H
+(
+zipcode"zipcodeJcredit_scoring_aws
+žï›“¼Ïžï›“¼Ï
+K
++
+__dummy"
+__dummy_idJcredit_scoring_aws
+žï›“ …Ïžï›“ …Ï1"$575a5946-e572-4715-9b67-1103e2546aad*˜Œ±“È×¼­2§
+ï
+credit_historycredit_scoring_awsdob_ssn"
+credit_card_due"
+mortgage_due"
+student_loan_due"
+vehicle_loan_due"
+
+hard_pulls"
+missed_payments_2y"
+missed_payments_1y"
+missed_payments_6m"
+bankruptcies2€ÎÚ:ùevent_timestamp*created_timestampZNL/home/ec2-user/feast-aws-credit-scoring-tutorial/data/credit_history.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢L/home/ec2-user/feast-aws-credit-scoring-tutorial/data/credit_history.parquet@3
+žï›“ õˆÏžó›“ˆî‚¬
+ò¤Á€ù3èò›“2Ì
+“
+zipcode_featurescredit_scoring_awszipcode"
+city"	
+state"
+location_type"
+tax_returns_filed"
+
+population"
+total_wages2€†°–:÷event_timestamp*created_timestampZMK/home/ec2-user/feast-aws-credit-scoring-tutorial/data/zipcode_table.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢K/home/ec2-user/feast-aws-credit-scoring-tutorial/data/zipcode_table.parquet@4
+žï›“°„žÏ¦ó›“–øñ
+žíëüö¶¬èò›“RÖ
+§
+,feast.infra.online_stores.sqlite.SqliteTable"w
+R/home/ec2-user/feast-aws-credit-scoring-tutorial/feature_repo/data/online_store.db!credit_scoring_aws_credit_history
+©
+,feast.infra.online_stores.sqlite.SqliteTable"y
+R/home/ec2-user/feast-aws-credit-scoring-tutorial/feature_repo/data/online_store.db#credit_scoring_aws_zipcode_featuresbŒevent_timestamp*created_timestampZMK/home/ec2-user/feast-aws-credit-scoring-tutorial/data/zipcode_table.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢K/home/ec2-user/feast-aws-credit-scoring-tutorial/data/zipcode_table.parquetªcredit_scoring_awsbŽevent_timestamp*created_timestampZNL/home/ec2-user/feast-aws-credit-scoring-tutorial/data/credit_history.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢L/home/ec2-user/feast-aws-credit-scoring-tutorial/data/credit_history.parquetªcredit_scoring_aws
