@@ -85,4 +85,4 @@ loan rejected!
 ```
 We are now ready to create our Ray Serve services using the jupyter notebook.
 
-Open the notebook and follow the instsructions.
+Open the notebook and follow the instructions.
