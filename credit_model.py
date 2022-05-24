@@ -5,7 +5,8 @@ import os
 import numpy as np
 from typing import Optional, Tuple
 import xgboost as xgb
-
+import mlflow
+import mlflow.pyfunc
 import joblib
 import pandas as pd
 from sklearn import tree
@@ -21,6 +22,9 @@ from ray.ml.result import Result
 from ray.ml.checkpoint import Checkpoint
 import ray.cloudpickle as cpickle
 from ray.ml.preprocessor import Preprocessor
+from ray.tune.integration.mlflow import MLflowLoggerCallback
+from ray.ml import RunConfig
+
 
 
 from ray.ml.checkpoint import Checkpoint
@@ -114,6 +118,7 @@ class CreditScoringModel:
             datasets={"train": train_dataset, "valid": valid_dataset},
             #preprocessor=preprocessor,
             num_boost_round=100,
+            run_config=RunConfig(callbacks=[MLflowLoggerCallback(experiment_name="loan-application", save_artifact=True)])
         )
         self.checkpoint = trainer.fit().checkpoint
         self.checkpoint.to_directory(self.model_filename)
